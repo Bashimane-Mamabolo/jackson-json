@@ -37,6 +37,7 @@ public class JacksonTests {
         // Arrange
         final ObjectMapper objectMapper = new ObjectMapper();
         String jsonObject = "{"
+                + "\"Kung\":\"Fu\","
                 + "\"isbn\":\"123456789\","
                 + "\"title\":\"Title\","
                 + "\"author\":\"Author\","
