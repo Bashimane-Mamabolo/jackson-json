@@ -1,5 +1,6 @@
 package com.bash.jacksonjson.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,6 +15,8 @@ public class Book {
     private String isbn;
     private String title;
     private String author;
+    // Anytime we take Java Object to JSON object, yearPublished will be 'year'.
+    @JsonProperty("year")
     private String yearPublished;
 
 }

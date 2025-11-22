@@ -27,7 +27,7 @@ public class JacksonTests {
                 + "\"isbn\":\"123456789\","
                 + "\"title\":\"Title\","
                 + "\"author\":\"Author\","
-                + "\"yearPublished\":\"1995\""
+                + "\"year\":\"1995\""
                 + "}");
 
     }
@@ -40,7 +40,7 @@ public class JacksonTests {
                 + "\"isbn\":\"123456789\","
                 + "\"title\":\"Title\","
                 + "\"author\":\"Author\","
-                + "\"yearPublished\":\"1995\""
+                + "\"year\":\"1995\""
                 + "}";
         // Act
         Book book = objectMapper.readValue(jsonObject, Book.class);
